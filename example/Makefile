@@ -194,6 +194,9 @@ $(BUILD_DIR):
 #######################################
 clean:
 	-rm -fR $(BUILD_DIR)
+
+flash:
+	all ST-LINK_CLI.exe -P build/example.hex -V "after_programming"
   
 #######################################
 # dependencies
